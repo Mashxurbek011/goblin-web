@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #084008;
+    background: linear-gradient(90deg, rgba(8, 64, 8, 1) 0%, rgba(24, 110, 24, 1) 45%, rgba(68, 150, 77, 1) 71%);
+}
+
+section {
+    background: #084008;
+    background: linear-gradient(90deg, rgba(8, 64, 8, 1) 0%, rgba(24, 110, 24, 1) 45%, rgba(68, 150, 77, 1) 71%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    padding-top: 20px;
+    justify-content: space-around;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bigdiv {
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.icons {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 60px;
+    padding-bottom: 110px;
+    padding-right: 60px;
+    color: #fff;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    background-color: #08400800;
+    padding-top: 20px;
+    gap: 20px;
+
+}
+
+.butt_compare {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: rgb(66, 172, 82);
+}
+
+.butt_watch {
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #0c540c;
+}
+
+a:hover {
+    color: #084008;
+    cursor: pointer
+}
+
+.butt_watch:hover {
+    cursor: pointer;
+    color: #084008;
+    background-color: #FFF;
+}
+
+.butt_compare:hover {
+    cursor: pointer;
+    color: #084008;
+    background-color: #FFF;
+}
+
+.goblin_png {
+    padding-left: 130px;
+}
+
+@media(max-width:650px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: darkgreen;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        width: 100%;
+        pad: 20px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .bigdiv {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+}
